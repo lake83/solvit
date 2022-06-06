@@ -4,7 +4,6 @@ namespace app\commands;
 use Yii;
 use yii\console\Controller;
 use Faker\Factory;
-use yii\helpers\Url;
 use app\models\{User, Album};
 
 /**
@@ -15,7 +14,7 @@ class SeedController extends Controller
     /**
      * Create User, Album and Photos.
      * 
-     * @return int Exit code
+     * @return string
      */
     public function actionIndex()
     {
